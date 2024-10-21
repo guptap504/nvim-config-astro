@@ -1,4 +1,4 @@
-if true then return {} end -- WARN: REMOVE THIS LINE TO ACTIVATE THIS FILE
+-- if true then return {} end -- WARN: REMOVE THIS LINE TO ACTIVATE THIS FILE
 
 -- AstroLSP allows you to customize the features in AstroNvim's LSP configuration engine
 -- Configuration documentation can be found with `:h astrolsp`
@@ -48,6 +48,27 @@ return {
       --   virtual_text = false,
       -- },
       -- clangd = { capabilities = { offsetEncoding = "utf-8" } },
+      ruff = {
+        init_options = {
+          settings = {
+            lineLength = 120,
+          },
+        },
+      },
+      basedpyright = {
+        settings = {
+          basedpyright = {
+            -- Using Ruff's import organizer
+            disableOrganizeImports = true,
+          },
+          python = {
+            analysis = {
+              -- Ignore all files for analysis to exclusively use Ruff for linting
+              ignore = { "*" },
+            },
+          },
+        },
+      },
     },
     -- customize how language servers are attached
     handlers = {

@@ -11,6 +11,7 @@ return {
     -- overrides `require("mason-null-ls").setup(...)`
     opts = {
       ensure_installed = {
+        "debugpy@1.7.0",
         -- "stylua",
         -- add more arguments for adding more null-ls sources
       },

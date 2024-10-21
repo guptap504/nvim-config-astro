@@ -13,6 +13,9 @@ return {
           my_venvs = {
             command = "fd python$ ~/.local/",
           },
+          pyenv = {
+            command = "fd python$ ~/.pyenv/versions/",
+          },
         },
       },
     },
@@ -36,4 +39,5 @@ return {
       timeout = 1500,
     },
   },
+  { "tpope/vim-dotenv" },
 }
