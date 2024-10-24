@@ -34,4 +34,5 @@ return {
   -- search
   { import = "astrocommunity.search.grug-far-nvim" },
   -- { import = "astrocommunity.recipes.heirline-mode-text-statusline" },
+  { import = "astrocommunity.project.projectmgr-nvim" },
 }
